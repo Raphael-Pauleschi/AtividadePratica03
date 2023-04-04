@@ -1,14 +1,14 @@
 import react from 'react'
 import {Button} from 'react-native'
 
-export default comp =>{
+export default ({buttonText}) =>{
   function executar(){
     console.warn('Estou vivo e forte')
   }
 
   return(
     <Button
-    title="Aperte"
+    title={buttonText}
     onPress={executar()}/>
   )
 }
